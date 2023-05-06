@@ -1,13 +1,15 @@
-function buttonclick(val)
+var screen =document.getElementById('screen');
+
+function btnClick(value){
+  
+screen.value += value;
+}
+function clearScreen()
 {
 
-    document.getElementById("screen").value+=val
+    screen.value="";
 }
-function cleardisplay(){
-    document.getElementById("screen").value=""
-}
-function equalClick(){
-    var text=document.getElementById("screen").value
-    var result=eval(text)
-    document.getElementById('screen').value=result
-}     
+ function findResult(){
+    var result=eval(screen.value);
+    screen.value=result;
+ }
