@@ -1,2 +1,2 @@
 # calculator_js
-basic calculator using javascript
+basic calculator using javascript.
